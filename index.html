@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature's Platter</title>
+
+    <!-- -------daisyUI and TailwindCSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- -----------google font-------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .sora-font {
+        font-family: "Sora", serif;
+      }
+
+      .nav-btn {
+        padding: 8px 25px;
+      }
+    </style>
+  </head>
+  <body class="sora-font">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+      <!-- -------navbar---------- -->
+      <nav class="flex justify-between md:mx-[120px] my-3 items-center">
+        <div
+          class="nav-start w-full flex justify-between items-center px-[14px]"
+        >
+          <div class="dropdown md:hidden order-1">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div>
+            <a href=""
+              ><img
+                src="./assets/logo-header.png"
+                class="w-12 md:w-36"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="nav-middle hidden md:contents">
+          <ul class="flex space-x-[27px] text-[17px]">
+            <li>Product</li>
+            <li>Services</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+
+        <div class="nav-end space-x-3 hidden md:contents">
+          <div class="flex space-x-2 text-[17px]">
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href=""> <i class="fa-solid fa-cart-shopping"></i> </a>
+          </div>
+          <div class="flex space-x-2 text-[17px]">
+            <p class="border border-[#179800] bg-none px-6 py-2 rounded-[7px]">
+              Login
+            </p>
+            <p class="bg-[#179800] px-6 py-2 rounded-[7px]">Register</p>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ----bannar section -------->
+      <section class="my-24">
+        <div class="space-y-6 mx-auto">
+          <h3 class="text-[#111111] font-semibold text-5xl text-center">
+            Freshness
+            <span class="text-[#179800]"
+              >You Can <br />
+              Count</span
+            >
+            On, Prices You’ll Love!
+          </h3>
+          <p class="text-center font-normal text-sm">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry <br />
+            staples, we’ve got you covered every day!
+          </p>
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            src="./assets/hero-vegetables.png"
+            width="880px"
+            class="mt-[35px] mb-3"
+            alt="a bag representing some vegetables"
+          />
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="service mx-[14px] md:mx-[120px] my-28">
+        <h3 class="text-[#179800] font-semibold text-[30px]">Services</h3>
+        <div class="service-cards mt-10 grid lg:grid-cols-3 gap-5">
+          <div
+            class="card bg-[#EFEBE3] shadow-sm flex items-center justify-center"
+          >
+            <div class="p-[21px] bg-[#FFFFFF] w-[127px] rounded-full mt-[25px]">
+              <img src="./assets/service.png" alt="" />
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="font-semibold text-xl">24/7 Services</h2>
+              <p class="font-light text-base">
+                Need Help? We’re Just a Call Away – 24/7!
+              </p>
+            </div>
+          </div>
+          <div
+            class="card bg-[#EFEBE3] shadow-sm flex items-center justify-center"
+          >
+            <div class="p-[21px] bg-[#FFFFFF] w-[127px] rounded-full mt-[25px]">
+              <img src="./assets/delivery.png" alt="" />
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="font-semibold text-xl">Fast Delivery</h2>
+              <p class="font-light text-base">
+                Craving Something? We’ll Get It There Fast!
+              </p>
+            </div>
+          </div>
+          <div
+            class="card bg-[#EFEBE3] shadow-sm flex items-center justify-center"
+          >
+            <div class="p-[21px] bg-[#FFFFFF] w-[127px] rounded-full mt-[25px]">
+              <img src="./assets/healthy.png" alt="" />
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="font-semibold text-xl">Healthy Products</h2>
+              <p class="font-light text-base">
+                Power Your Day with Healthy Nutrition!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- -------------fontawesome kit----------- -->
+    <script
+      src="https://kit.fontawesome.com/49d418625e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
