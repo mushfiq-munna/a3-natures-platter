@@ -34,61 +34,57 @@
   <body class="sora-font">
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
       <!-- -------navbar---------- -->
-      <nav class="flex md:mx-[120px] my-3 items-center">
-        <div
-          class="nav-start w-full flex justify-between items-center px-[14px]"
-        >
-          <div class="dropdown md:hidden order-1">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-          <div>
-            <a href=""
-              ><img
-                src="./assets/logo-header.png"
-                class="w-12 md:w-36"
-                alt=""
-              />
-            </a>
-          </div>
+      <nav class="flex justify-between items-center md:mx-[120px] my-3 px-4">
+        <div>
+          <a href="">
+            <img src="./assets/logo-header.png" class="w-12 md:w-36" alt="" />
+          </a>
         </div>
 
-        <div class="nav-middle hidden md:contents">
+        <div class="hidden md:flex items-center gap-8">
           <ul class="flex items-center gap-[27px] text-[17px]">
             <li>Product</li>
             <li>Services</li>
             <li>Contact us</li>
           </ul>
+
+          <div class="flex items-center gap-4">
+            <div class="flex gap-4 text-[17px]">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="flex gap-4 text-[17px]">
+              <a class="border border-[#179800] px-8 py-2 rounded-[7px]"
+                >Login</a
+              >
+              <a class="bg-[#179800] text-white px-8 py-2 rounded-[7px]"
+                >Register</a
+              >
+            </div>
+          </div>
         </div>
 
-        <div class="nav-end space-x-3 hidden md:contents">
-          <div class="flex gap-2 text-[17px]">
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#"> <i class="fa-solid fa-cart-shopping"></i> </a>
-          </div>
-          <div class="flex space-x-2 text-[17px]">
-            <a class="border border-[#179800] bg-none px-6 py-2 rounded-[7px]">
-              Login
-            </a>
-            <p class="bg-[#179800] px-6 py-2 rounded-[7px]">Register</p>
-          </div>
+        <div class="md:hidden">
+          <i class="fa-solid fa-bars text-xl"></i>
         </div>
       </nav>
 
       <!-- ----bannar section -------->
       <section class="my-4 md:my-24">
         <div class="space-y-6 mx-auto">
-          <h3 class="text-[#111111] font-semibold text-5xl text-center">
+          <h3
+            class="text-[#111111] font-semibold text-[40px] md:text-5xl text-center"
+          >
             Freshness
-            <span class="text-[#179800]"
-              >You Can <br />
-              Count</span
-            >
-            On, Prices You’ll Love!
+            <span class="text-[#179800]">You Can</span>
+            <br class="hidden md:block" />
+            <span class="text-[#111111]">Count</span> On, Prices You'll Love!
           </h3>
-          <p class="text-center font-normal text-sm">
+          <p class="text-center font-normal text-sm px-4 md:px-0">
             Shop your daily essentials at unbeatable prices. From fresh produce
-            to pantry <br />
-            staples, we’ve got you covered every day!
+            to pantry
+            <br class="hidden md:block" />
+            staples, we've got you covered every day!
           </p>
         </div>
 
@@ -153,37 +149,61 @@
       <!-- ----------popular products------- -->
 
       <section
-        class="popular-products flex flex-col my-5 md:justify-center px-[14px] md:px-[120px] bg-[#EFEBE3] h-[600px]"
+        class="popular-products flex flex-col my-5 md:justify-center px-[14px] md:px-[120px] bg-[#EFEBE3] min-h-[600px] py-8"
       >
         <h3 class="text-[#179800] font-semibold text-[30px] my-4">
           Popular Products
         </h3>
 
-        <!-- ----------Product Cards----------- -->
         <div
-          class="product-cards my-[13px] grid grid-cols-2 md:grid-cols-4 gap-[16px]"
+          class="product-cards my-[13px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[35%_auto_auto_auto] gap-4"
         >
-          <!-- -------------Product Card1---------- -->
+          <!-- First promotional card -->
           <div
-            class="product-card bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] rounded-lg col-span-2 md:row-span-3 flex flex-col relative"
+            class="product-card col-span-2 md:col-span-3 lg:col-span-1 lg:row-span-3 bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] rounded-lg p-6 relative"
           >
-            <div class="px-[30px] pt-[20px]">
-              <h5 class="text-[27px] text-[#ffffff]">30% off</h5>
-              <h5 class="font-normal text-[13px] my-4">
-                Discover a world of treats, toys and <br />
-                essentials handpicked for
-              </h5>
-              <a class="bg-[#ffffff] text-center mt-2 px-6 py-2 rounded-[7px]">
-                Buy Now</a
-              >
-            </div>
-
-            <div
-              class="flex justify-end md:absolute right-0 bottom-0 overflow-hidden"
-            >
-              <img src="./assets/vegetable-offer.png" width="240px" alt="" />
+            <div class="flex flex-col justify-between h-full">
+              <div>
+                <h5 class="text-[27px] text-[#ffffff]">30% off</h5>
+                <h5 class="font-normal text-[13px] my-4">
+                  Discover a world of treats, toys and <br />
+                  essentials handpicked for
+                </h5>
+                <a class="bg-[#ffffff] inline-block px-6 py-2 rounded-[7px]">
+                  Buy Now
+                </a>
+              </div>
+              <div class="flex justify-end mt-4">
+                <img
+                  src="./assets/vegetable-offer.png"
+                  class="max-w-[240px] w-full"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
+
+          <!-- Rest of the product cards remain unchanged -->
+          <!-- <div
+          class="product-card bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] rounded-lg lg:col-span-2 lg:row-span-2 flex flex-col relative order-first"
+        >
+          <div class="px-[30px] pt-[20px]">
+            <h5 class="text-[27px] text-[#ffffff]">30% off</h5>
+            <h5 class="font-normal text-[13px] my-4">
+              Discover a world of treats, toys and <br />
+              essentials handpicked for
+            </h5>
+            <a class="bg-[#ffffff] text-center mt-2 px-6 py-2 rounded-[7px]">
+              Buy Now</a
+            >
+          </div>
+
+          <div
+            class="flex justify-end md:absolute right-0 bottom-0 overflow-hidden"
+          >
+            <img src="./assets/vegetable-offer.png" width="240px" alt="" />
+          </div>
+        </div> -->
           <!-- -------------Product Card2---------- -->
           <div
             class="product-card bg-[#FFFFFF] flex items-center gap-4 p-2 rounded-lg"
@@ -338,7 +358,7 @@
           </div>
           <!-- -------------Product Card10---------- -->
           <div
-            class="product-card bg-[#FFFFFF] md:flex items-center gap-4 p-2 rounded-lg"
+            class="product-card bg-[#FFFFFF] flex items-center gap-4 p-2 rounded-lg hidden md:flex"
           >
             <div class="w-[73px]">
               <img
@@ -438,23 +458,25 @@
       </section>
     </main>
 
-    <footer class="bg-[#179800] md:h-[560px]">
+    <footer class="bg-[#179800] py-10 md:py-0 md:h-[560px]">
       <div
-        class="text-[#ffffff] mx-[14px] pt-[300px] pb-5 lg:mx-[120px] md:flex justify-between items-end space-y-7"
+        class="text-[#ffffff] mx-[14px] md:pt-[300px] pb-5 lg:mx-[120px] flex flex-col md:flex-row justify-between items-center md:items-end gap-8 md:gap-0"
       >
-        <div class="space-y-2 w-[350px]">
-          <img src="./assets/logo-footer.png" alt="" />
+        <div class="space-y-4 w-full md:w-[350px] text-center md:text-left">
+          <img src="./assets/logo-footer.png" class="mx-auto md:mx-0" alt="" />
           <p class="font-normal text-[17px]">
             Discover a world of treats, toys, and essentials handpicked for your
             furry friends
           </p>
         </div>
-        <div class="flex flex-col gap-3 md:gap-[30px] font-normal text-base">
+        <div
+          class="flex flex-col items-center md:items-start gap-3 md:gap-[30px] font-normal text-base"
+        >
           <a href="">Product</a>
           <a href="">Services</a>
-          <a href="">Contuct us</a>
+          <a href="">Contact us</a>
         </div>
-        <div class="space-y-2">
+        <div class="space-y-4 text-center md:text-left">
           <p class="font-normal text-sm">Follow Us</p>
           <div class="space-x-[25px]">
             <i class="fa-brands fa-facebook"></i>
