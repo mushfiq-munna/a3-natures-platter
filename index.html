@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature's Platter</title>
 
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon.png "
+      type="image/x-icon"
+    />
+
     <!-- -------daisyUI and TailwindCSS CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
@@ -359,13 +365,13 @@
       <!-- ----------Arrival Section------ -->
 
       <section
-        class="arrival h-[550px] md:h-[250px] mx-[14px] mt-20 lg:mx-[120px]"
+        class="arrival h-[250px] md:h-[400px] mx-[14px] my-14 lg:mx-[120px]"
       >
         <h3 class="text-[#179800] font-semibold text-[30px] mb-7">
           Arrival & Offers
         </h3>
 
-        <div class="grid grid-cols-1 md:grid-cols-[55%_auto] gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-[55%_auto] gap-4 mb-6">
           <div class="bg-[#115414] flex justify-between rounded-lg">
             <div
               class="space-y-4 flex flex-col justify-center items-center p-[20px]"
@@ -403,6 +409,47 @@
             </div>
             <div class="flex justify-start items-end w-[150px] mr-3">
               <img src="./assets/india-gate-mock-up.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -----------FAQ section----- -->
+
+      <section class="mx-[20px] mt-[450px] md:mt-0 md:mx-[120px]">
+        <h3 class="text-[#179800] font-semibold text-[30px]">FAQ</h3>
+        <div class="bg-[#EFEBE3] rounded-lg mt-16 p-7">
+          <div class="hero-content flex-col md:flex-row">
+            <img src="./assets/faq.png" class="rounded-lg shadow-sm" />
+
+            <div class="space-y-2 p-0">
+              <div class="collapse collapse-arrow bg-white">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                  What kind of product you sell?
+                </div>
+                <div class="collapse-content">
+                  <p>We sell pure organic product.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-white">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                  Can i get home delivery?
+                </div>
+                <div class="collapse-content">
+                  <p>Yes, Of course.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-white">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                  Where can i found your firm?
+                </div>
+                <div class="collapse-content">
+                  <p>Diabari, Mirpur, Dhaka-1216</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
